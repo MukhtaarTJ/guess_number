@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess number</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="a">
+      <div class="general">
+        <header>
+          <h1>NUMBER GUESSING GAME!</h1>
+          <h3>Guess A Number Between 1 And 20</h3>
+        </header>
+        <section>
+          <input id="secretnumber" type="number" placeholder="?" />
+        </section>
+
+        <section class="main">
+          <div class="left">
+            <p><input type="number" id="guess" /></p>
+            <button class="btn_check">Check</button>
+          </div>
+          <div class="right">
+            <p id="message">Start Guessing .......</p>
+            <p class="display_score">score: <span class="score">20</span></p>
+            <p class="display_highscore">
+              <!-- Highscore: <span class="highscore">0</span> -->
+            </p>
+          </div>
+        </section>
+        <button class="btn_restart">RESTART</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
